@@ -88,7 +88,7 @@ class PostalAddress implements PostalAddressInterface {
     this.addressParsers = allAddressParsers
   }
 
-  private getFormat<T extends AvailableAddressFormat>(
+  public getFormat<T extends AvailableAddressFormat>(
     overrideFormat: T,
   ): AcceptAddressFormat | null {
     const { outputFormat, formatForCountry, formatForType, addressFormats } =
@@ -144,7 +144,7 @@ class PostalAddress implements PostalAddressInterface {
     return null
   }
 
-  private setProperty<T extends keyof AddressObject>(
+  public setProperty<T extends keyof AddressObject>(
     property: T,
     newValue: string,
   ): void {
