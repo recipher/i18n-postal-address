@@ -1,6 +1,6 @@
 {
   "name": "@recipher/i18n-postal-address",
-  "version": "0.8.2",
+  "version": "0.8.4",
   "description": "A JavaScript library to produce international postal addresses formatted by region for node and the web",
   "homepage": "https://joaocarmo.com/i18n-postal-address-playground",
   "author": "João Carmo",
@@ -9,6 +9,7 @@
   "main": "./dist/postal-address.node.js",
   "exports": {
     ".": {
+      "main": "./dist/postal-address.node.js",
       "browser": "./dist/postal-address.js",
       "require": "./dist/postal-address.node.js"
     },
